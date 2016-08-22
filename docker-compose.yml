@@ -1,0 +1,17 @@
+version: '2'
+services:
+  app:
+    image: aggenebbisj/play-slick:fb8efcba089d727d6a31b1348d2075414e8f8115
+    environment:
+      JDBC_DATABASE_URL: jdbc:postgresql://postgres:5432/mydb?user=postgres&password=mysecretpassword
+      APPLICATION_SECRET: some_secret
+    ports:
+    - "8080:9000"
+    links:
+    - postgres
+  postgres:
+    image: adjuvo/postgres
+    ports:
+    - "5433:5432"
+    environment:
+      POSTGRES_PASSWORD: mysecretpassword
