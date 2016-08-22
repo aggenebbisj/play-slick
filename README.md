@@ -1,3 +1,5 @@
+[ ![Codeship Status for aggenebbisj/play-slick](https://codeship.com/projects/08e7ffe0-4adf-0134-849f-26219e586aaf/status?branch=master)](https://codeship.com/projects/169782)
+
 This is your new Play application
 =================================
 
